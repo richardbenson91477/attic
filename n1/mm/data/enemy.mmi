@@ -1,0 +1,16 @@
+type enemy
+object enemy.mmo
+weight 0.0005
+bound_only
+state
+    source SELF SELF
+        anim_init SELF 1 0
+        set_state SELF 1 1
+state
+    source player ALL
+        set_state SELF 1 1
+state
+    source SELF SELF
+        anim_seq SELF 1
+    source tool ALL
+        set_state SELF 1 0

@@ -1,0 +1,22 @@
+#!/bin/sh
+
+if [ "x""$1" == "x" ]; then
+    echo usage: $0 base-name
+    exit
+fi
+
+if [ -e "$1.mni2" ]
+then
+	FIN="$1.mni2"
+else
+	FIN="tandp_neg1to1.mni"
+fi
+
+rm -f "out/$1.mnw"
+./nn_train "$1.mnn" "out/$1.mnw"
+
+rm -f "out/$1.out"
+./nn_map "$1.mnn" "out/$1.mnw" "$FIN" "out/$1.out"
+
+pplot < "out/$1.out"
+

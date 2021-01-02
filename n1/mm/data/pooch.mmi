@@ -1,0 +1,20 @@
+type dog
+object pooch.mmo
+weight 0.005
+state
+    source SELF SELF
+        set_state SELF 1 1
+        anim_init SELF 1 0
+state
+    source SELF SELF
+        anim_seq SELF 0
+    source player ALL
+        anim_seq SELF 1
+        set_state SELF 1 1
+state
+    len 1000.0
+    next 2
+    source SELF SELF
+        sound pooch1.raw
+    source tool ALL
+        set_state SELF 1 0

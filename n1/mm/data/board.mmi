@@ -1,0 +1,5 @@
+type board
+object board.mmo
+state
+    source SELF SELF
+        anim_init SELF 1 0

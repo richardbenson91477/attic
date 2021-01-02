@@ -1,0 +1,12 @@
+type treasure
+object treasure.mmo
+state
+    source player ALL
+        anim_init SELF 1 0
+        sound treasure.raw
+        set_state SELF 1 1
+state
+    len 800.0
+state
+    source SELF SELF
+        anim_pause SELF

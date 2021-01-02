@@ -1,0 +1,5 @@
+type breakable
+object breakable.mmo
+state
+    source tool ALL
+        destroy SELF
