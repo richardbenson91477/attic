@@ -6,17 +6,18 @@ mount -t proc proc /proc
 mount -t sysfs sys /sys
 mount -t tmpfs run /run
 
-mkdir -p /run/log
-mkdir -p /run/lock
-mkdir -p /run/resolvconf
+mkdir /run/log
+mkdir /run/lock
+mkdir /run/resolvconf
+mkdir /run/dbus
 mkdir -p -m 700 /run/user/1000/
 chown 1000.1000 /run/user/1000
 
 mount -o remount,rw LABEL=linuxroot
 
-mkdir -p /dev/pts
+mkdir /dev/pts
 mount -t devpts pts /dev/pts
-mkdir -p /dev/shm
+mkdir /dev/shm
 mount -t tmpfs shm /dev/shm
 
 mount -a
@@ -32,6 +33,8 @@ ip link set lo up
 /etc/init/wifi_up 
 
 alsactl restore
+
+dbus-daemon --system --fork
 
 pulseaudio --system &
 
