@@ -4,7 +4,6 @@ export WLAN="wlp2s0"
 export SSID="Trump 2020"
 
 ip link set "$WLAN" up
-iw connect "$WLAN" "$SSID" 
 wpa_supplicant -B -i$WLAN -c/etc/init/wpa_supplicant.conf
 dhclient 
 echo 'nameserver 1.1.1.1' > /etc/resolv.conf
