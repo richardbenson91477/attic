@@ -1,0 +1,7 @@
+#!/bin/sh
+
+PATH=/bin:/sbin:/usr/bin:/usr/sbin
+
+umount -a -r
+sync
+

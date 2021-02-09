@@ -1,0 +1,36 @@
+#! /bin/sh
+
+PATH=/bin:/sbin:/usr/bin:/usr/sbin
+
+mount -t proc proc /proc
+mount -t sysfs sys /sys
+mount -t tmpfs run /run
+
+mkdir -p /run/log
+mkdir -p /run/lock
+mkdir -p /run/resolvconf
+mkdir -p -m 700 /run/user/1000/
+chown 1000.1000 /run/user/1000
+
+mount -o remount,rw LABEL=linuxroot
+
+mkdir -p /dev/pts
+mount -t devpts pts /dev/pts
+mkdir -p /dev/shm
+mount -t tmpfs shm /dev/shm
+
+mount -a
+
+export HOSTNAME=$(cat /etc/hostname)
+hostname "$HOSTNAME"
+
+/usr/local/sbin/udevd --daemon
+
+cat /etc/init/modules.list."$HOSTNAME" | xargs modprobe -a -b
+
+/etc/init/wifi_up 
+
+alsactl restore
+
+pulseuadio --system &
+
