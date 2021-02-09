@@ -28,6 +28,7 @@ hostname "$HOSTNAME"
 
 cat /etc/init/modules.list."$HOSTNAME" | xargs modprobe -a -b
 
+ip link set lo up
 /etc/init/wifi_up 
 
 alsactl restore
