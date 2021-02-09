@@ -1,4 +1,4 @@
 ::sysinit:/etc/init/rcS
-tty1::respawn:-/bin/login
+tty1::askfirst:-/bin/login
 tty2::askfirst:-/bin/login
 ::ctrlaltdel:/etc/init/rc0
