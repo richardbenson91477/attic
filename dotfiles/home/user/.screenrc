@@ -16,13 +16,13 @@ termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
 #defbce on
 
 # mouse tracking allows to switch region focus by clicking
-#mousetrack on
+mousetrack on
 
 # default windows
 screen -t Shell1    1 bash -l
 screen -t Vim       2 vim
-screen -t IPython   3 ipython
-screen -t Shell2    4 bash -l
+screen -t Shell2    3 bash -l
+screen -t ISympy    4 isympy
 select 0
 bind c screen 1 # window numbering starts at 1 not 0
 bind 0 select 10
