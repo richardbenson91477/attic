@@ -33,5 +33,5 @@ ip link set lo up
 
 alsactl restore
 
-pulseuadio --system &
+pulseaudio --system &
 
