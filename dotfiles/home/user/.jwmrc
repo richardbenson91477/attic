@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+<JWM>
+
+    <!-- The root menu. -->
+    <RootMenu onroot="12">
+<!-- <Include>/etc/jwm/debian-menu</Include> -->
+        <Program icon="xfce4-appfinder" label="Run">xfce4-appfinder</Program>
+        <Program icon="st" label="Terminal">terminal</Program>
+        <Program icon="firefox" label="Firefox">firefox</Program>
+        <Program icon="nemo" label="Files">nemo</Program>
+        <Separator/>
+        <Program icon="lock.png" label="Lock">
+            slock
+        </Program>
+        <Separator/>
+        <Restart label="Restart" icon="restart.png"/>
+        <Exit label="Exit" confirm="true" icon="quit.png"/>
+    </RootMenu>
+    
+    <!-- Options for program groups. -->
+    <Group>
+        <Option>tiled</Option>
+        <Option>aerosnap</Option>
+    </Group>
+
+    <!-- Tray at the bottom. -->
+    <Tray x="0" y="-1" height="32" autohide="off">
+
+        <TrayButton icon="apps.png">root:1</TrayButton>
+<!--
+        <Pager labeled="true"/>
+-->
+        <TaskList maxwidth="256"/>
+
+        <Dock/>
+        <Clock format="%I:%M %p on %B %d, %Y"><Button mask="123">exec:program_of_the_day</Button></Clock>
+
+    </Tray>
+
+    <!-- Visual Styles -->
+    <WindowStyle>
+        <Font>Sans-9:bold</Font>
+        <Width>4</Width>
+        <Height>21</Height>
+        <Corner>3</Corner>
+        <Foreground>#FFFFFF</Foreground>
+        <Background>#555555</Background>
+        <Outline>#000000</Outline>
+        <Opacity>0.5</Opacity>
+        <Active>
+            <Foreground>#FFFFFF</Foreground>
+            <Background>#773355</Background>
+            <Outline>#000000</Outline>
+            <Opacity>1.0</Opacity>
+        </Active>
+    </WindowStyle>
+    <TrayStyle group="true" list="all">
+        <Font>Sans-9</Font>
+        <Background>#333333</Background>
+        <Foreground>#FFFFFF</Foreground>
+        <Outline>#000000</Outline>
+        <Opacity>0.75</Opacity>
+    </TrayStyle>
+    <TaskListStyle>
+      <Font>Sans-9</Font>
+      <Active>
+        <Foreground>#FFFFFF</Foreground>
+        <Background>#555555</Background>
+      </Active>
+      <Foreground>#FFFFFF</Foreground>
+      <Background>#333333</Background>
+    </TaskListStyle>
+    <PagerStyle>
+        <Outline>#000000</Outline>
+        <Foreground>#555555</Foreground>
+        <Background>#333333</Background>
+        <Text>#FFFFFF</Text>
+        <Active>
+            <Foreground>#773355</Foreground>
+            <Background>#004488</Background>
+        </Active>
+    </PagerStyle>
+    <MenuStyle>
+        <Font>Sans-9</Font>
+        <Foreground>#FFFFFF</Foreground>
+        <Background>#333333</Background>
+        <Outline>#000000</Outline>
+        <Active>
+            <Foreground>#FFFFFF</Foreground>
+            <Background>#773355</Background>
+        </Active>
+        <Opacity>0.85</Opacity>
+    </MenuStyle>
+    <PopupStyle>
+        <Font>Sans-9</Font>
+        <Foreground>#000000</Foreground>
+        <Background>#999999</Background>
+    </PopupStyle>
+
+    <!-- Path where icons can be found.
+         IconPath can be listed multiple times to allow searching
+         for icons in multiple paths.
+      -->
+    <IconPath>/usr/local/share/pixmaps</IconPath>
+    <IconPath>/usr/share/icons/Papirus/64x64/actions</IconPath>
+    <IconPath>/usr/share/icons/Papirus/64x64/apps</IconPath>
+    <IconPath>/usr/share/icons/Papirus/64x64/categories</IconPath>
+    <IconPath>/usr/share/icons/Papirus/64x64/devices</IconPath>
+    <IconPath>/usr/share/icons/Papirus/64x64/emblems</IconPath>
+    <IconPath>/usr/share/icons/Papirus/64x64/mimetypes</IconPath>
+    <IconPath>/usr/share/icons/Papirus/64x64/places</IconPath>
+    <IconPath>/usr/share/icons/Papirus/64x64/status</IconPath>
+    <IconPath>/usr/share/icons/Papirus/32x32/actions</IconPath>
+    <IconPath>/usr/share/icons/Papirus/32x32/animations</IconPath>
+    <IconPath>/usr/share/icons/Papirus/32x32/apps</IconPath>
+    <IconPath>/usr/share/icons/Papirus/32x32/categories</IconPath>
+    <IconPath>/usr/share/icons/Papirus/32x32/devices</IconPath>
+    <IconPath>/usr/share/icons/Papirus/32x32/emblems</IconPath>
+    <IconPath>/usr/share/icons/Papirus/32x32/mimetypes</IconPath>
+    <IconPath>/usr/share/icons/Papirus/32x32/places</IconPath>
+    <IconPath>/usr/share/icons/Papirus/32x32/status</IconPath>
+    <IconPath>/usr/share/icons/Papirus/scalable/actions</IconPath>
+    <IconPath>/usr/share/icons/Papirus/scalable/apps</IconPath>
+    <IconPath>/usr/share/icons/Papirus/scalable/categories</IconPath>
+    <IconPath>/usr/share/icons/Papirus/scalable/devices</IconPath>
+    <IconPath>/usr/share/icons/Papirus/scalable/emblems</IconPath>
+    <IconPath>/usr/share/icons/Papirus/scalable/mimetypes</IconPath>
+    <IconPath>/usr/share/icons/Papirus/scalable/places</IconPath>
+    <IconPath>/usr/share/icons/Papirus/scalable/status</IconPath>
+    <IconPath>/usr/share/icons/hicolor/256x256/apps</IconPath>
+    <IconPath>/usr/share/icons/hicolor/256x256/mimetypes</IconPath>
+    <IconPath>/usr/share/icons/hicolor/32x32/actions</IconPath>
+
+    <IconPath>/usr/share/icons/hicolor/32x32/apps</IconPath>
+    <IconPath>/usr/share/icons/hicolor/32x32/categories</IconPath>
+    <IconPath>/usr/share/icons/hicolor/32x32/devices</IconPath>
+    <IconPath>/usr/share/icons/hicolor/32x32/emblems</IconPath>
+    <IconPath>/usr/share/icons/hicolor/32x32/mimetypes</IconPath>
+    <IconPath>/usr/share/icons/hicolor/32x32/status</IconPath>
+    <IconPath>/usr/share/icons/hicolor/512x512/apps</IconPath>
+    <IconPath>/usr/share/icons/hicolor/512x512/mimetypes</IconPath>
+    <IconPath>/usr/share/icons/hicolor/scalable/actions</IconPath>
+    <IconPath>/usr/share/icons/hicolor/scalable/apps</IconPath>
+    <IconPath>/usr/share/icons/hicolor/scalable/categories</IconPath>
+    <IconPath>/usr/share/icons/hicolor/scalable/devices</IconPath>
+    <IconPath>/usr/share/icons/hicolor/scalable/emblems</IconPath>
+    <IconPath>/usr/share/icons/hicolor/scalable/mimetypes</IconPath>
+    <IconPath>/usr/share/icons/hicolor/scalable/places</IconPath>
+    <IconPath>/usr/share/icons/hicolor/scalable/status</IconPath>
+    <IconPath>/usr/share/icons</IconPath>
+    <IconPath>/usr/share/pixmaps</IconPath>
+    <IconPath>
+        /usr/local/share/jwm
+    </IconPath>
+
+    <!-- Virtual Desktops -->
+    <!-- Desktop tags can be contained within Desktops for desktop names. -->
+
+    <Desktops width="1" height="1">
+        <!--        <Background type="solid">#111111</Background>
+        -->
+    </Desktops>
+
+    <!-- Double click speed (in milliseconds) -->
+    <DoubleClickSpeed>400</DoubleClickSpeed>
+
+    <!-- Double click delta (in pixels) -->
+    <DoubleClickDelta>2</DoubleClickDelta>
+
+    <!-- The focus model (sloppy or click) -->
+    <FocusModel>click</FocusModel>
+
+    <!-- The snap mode (none, screen, or border) -->
+    <SnapMode distance="5">border</SnapMode>
+
+    <!-- The move mode (outline or opaque) -->
+    <MoveMode>opaque</MoveMode>
+
+    <!-- The resize mode (outline or opaque) -->
+    <ResizeMode>opaque</ResizeMode>
+
+    <!-- Key bindings -->
+    <Key key="Up">up</Key>
+    <Key key="Down">down</Key>
+    <Key key="Right">right</Key>
+    <Key key="Left">left</Key>
+    <Key key="h">left</Key>
+    <Key key="j">down</Key>
+    <Key key="k">up</Key>
+    <Key key="l">right</Key>
+    <Key key="Return">select</Key>
+    <Key key="Escape">escape</Key>
+
+    <Key mask="4" key="Tab">nextstacked</Key>
+    <Key mask="4" key="q">close</Key>
+    <Key mask="4" key="d">showdesktop</Key>
+    <Key mask="4" key="Spc">window</Key>
+    <Key mask="4" key="m">maximize</Key>
+    <Key mask="4" key="n">minimize</Key>
+    <Key mask="4" key="f">fullscreen</Key>
+    <Key mask="4" key="z">move</Key>
+    <Key mask="4" key="x">resize</Key>
+    <Key mask="4" key="a">root:1</Key>
+
+    <Key mask="4" key="r">exec:xfce4-appfinder</Key>
+    <Key mask="4" key="c">exec:qalculate</Key>
+    <Key mask="4" key="t">exec:terminal</Key>
+    <Key mask="4" key="w">exec:firefox</Key>
+    <Key mask="4" key="f">exec:nemo</Key>
+    <Key mask="4" key="l">exec:slock</Key>
+    <Key mask="4" key="p">exec:gnome-screenshot</Key>
+    <Key mask="4" key="i">exec:xrandr_brightness_up</Key>
+    <Key mask="4" key="u">exec:xrandr_brightness_down</Key>
+    <Key mask="4" key="o">exec:xrandr_brightness 1.0</Key>
+    <Key mask="4" key="Delete">exec:lxtask</Key>
+
+</JWM>
