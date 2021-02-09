@@ -206,7 +206,7 @@
     <Key mask="4" key="c">exec:qalculate</Key>
     <Key mask="4" key="t">exec:terminal</Key>
     <Key mask="4" key="w">exec:firefox</Key>
-    <Key mask="4" key="f">exec:nemo</Key>
+    <Key mask="5" key="e">exec:nemo</Key>
     <Key mask="4" key="l">exec:slock</Key>
     <Key mask="4" key="p">exec:gnome-screenshot</Key>
     <Key mask="4" key="i">exec:xrandr_brightness_up</Key>
