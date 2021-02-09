@@ -6,8 +6,8 @@
 <!-- <Include>/etc/jwm/debian-menu</Include> -->
         <Program icon="xfce4-appfinder" label="Run">xfce4-appfinder</Program>
         <Program icon="st" label="Terminal">terminal</Program>
-        <Program icon="firefox" label="Firefox">firefox</Program>
-        <Program icon="nemo" label="Files">nemo</Program>
+        <Program icon="firefox" label="Web">firefox</Program>
+        <Program icon="spacefm" label="Files">spacefm</Program>
         <Separator/>
         <Program icon="lock.png" label="Lock">
             slock
@@ -206,7 +206,7 @@
     <Key mask="4" key="c">exec:qalculate</Key>
     <Key mask="4" key="t">exec:terminal</Key>
     <Key mask="4" key="w">exec:firefox</Key>
-    <Key mask="5" key="e">exec:nemo</Key>
+    <Key mask="4" key="e">exec:spacefm</Key>
     <Key mask="4" key="l">exec:slock</Key>
     <Key mask="4" key="p">exec:gnome-screenshot</Key>
     <Key mask="4" key="i">exec:xrandr_brightness_up</Key>
