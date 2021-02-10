@@ -36,5 +36,5 @@ alsactl restore
 
 dbus-daemon --system --fork
 
-pulseaudio --system &
+pulseaudio --system -D
 
