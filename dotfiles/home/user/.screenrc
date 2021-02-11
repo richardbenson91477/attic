@@ -1,22 +1,17 @@
 # original c/o https://gist.github.com/joaopizani/2718397
 #
+defscrollback 5000
+startup_message off
+deflogin on
+#autodetach off
+vbell on
+vbell_msg "   Wuff  ----  Wuff!!  "
+#defbce on
+mousetrack on
+
 # the following two lines give a two-line status, with the current window highlighted
 hardstatus alwayslastline
 hardstatus string '%{= kG}[%{G}%H%? %1`%?%{g}][%= %{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %=%{g}][%{B}%m/%d %{W}%C%A%{g}]'
-
-# huge scrollback buffer
-defscrollback 5000
-
-# no welcome message
-startup_message off
-
-# 256 colors
-attrcolor b ".I"
-termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
-#defbce on
-
-# mouse tracking allows to switch region focus by clicking
-mousetrack on
 
 # default windows
 screen -t Shell1    1 bash -l
@@ -24,11 +19,9 @@ screen -t Vim       2 vim
 screen -t Shell2    3 bash -l
 screen -t ISympy    4 isympy
 select 0
-bind c screen 1 # window numbering starts at 1 not 0
-bind 0 select 10
-
-# get rid of silly xoff stuff
-bind s split
+#bind c screen 1 # window numbering starts at 1 not 0
+#bind 0 select 10
+#bind s split
 
 # layouts
 layout autosave on
@@ -58,12 +51,6 @@ layout attach two
 layout attach three
 layout select two
 
-# navigating regions with Ctrl-arrows
-#bindkey "^[[1;5D" focus left
-#bindkey "^[[1;5C" focus right
-#bindkey "^[[1;5A" focus up
-#bindkey "^[[1;5B" focus down
-
 # switch windows with F3 (prev) and F4 (next)
 bindkey "^[OR" prev
 bindkey "^[OS" next
@@ -90,4 +77,32 @@ bind -c rsz l eval "resize -h +5" "command -c rsz"
 
 # F1 
 bindkey "^[OP" focus
+# navigating regions with Ctrl-arrows
+#bindkey "^[[1;5D" focus left
+#bindkey "^[[1;5C" focus right
+#bindkey "^[[1;5A" focus up
+#bindkey "^[[1;5B" focus down
+
+# 256 colors
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+
+termcap  vt100|xterm LP:G0
+terminfo vt100|xterm LP:G0
+termcap  vt100 dl=5\E[M
+terminfo vt100 dl=5\E[M
+#xterm understands both im/ic and doesn't have a status line.
+#Note: Do not specify im and ic in the real termcap/info file as
+#some programs (e.g. vi) will (no,no, may (jw)) not work anymore.
+termcap  xterm hs@:cs=\E[%i%d;%dr:im=\E[4h:ei=\E[4l
+terminfo xterm hs@:cs=\E[%i%p1%d;%p2%dr:im=\E[4h:ei=\E[4l
+# we do not want the width to change to 80 characters on startup:
+# on suns, /etc/termcap has :is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;3;4;6l:
+termcap xterm 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
+terminfo xterm 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
+#
+# Do not use xterms alternate window buffer. 
+# This one would not add lines to the scrollback buffer.
+termcap xterm|xterms|xs ti=\E7\E[?47l
+terminfo xterm|xterms|xs ti=\E7\E[?47l
 
