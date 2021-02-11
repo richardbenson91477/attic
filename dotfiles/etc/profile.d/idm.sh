@@ -13,7 +13,7 @@ alias grep='grep --color=auto'
 alias tree='tree -C'
 alias cdr='cd $(realpath "$PWD")'
 alias open='gio open'
-alias xterm='xterm -fa "Mono" -fs 13'
+alias xterm='xterm -fa "Mono" -fs 13 -bg gray20 -fg gray80'
 alias screen='screen -T screen-256color'
 
 #set -o vi

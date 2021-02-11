@@ -8,6 +8,7 @@
         <Program icon="st" label="Terminal">terminal</Program>
         <Program icon="firefox" label="Web">firefox</Program>
         <Program icon="spacefm" label="Files">spacefm</Program>
+        <Program icon="pavucontrol" label="Volume">pavucontrol</Program>
         <Separator/>
         <Program icon="lock.png" label="Lock">
             slock

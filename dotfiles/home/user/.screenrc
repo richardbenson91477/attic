@@ -6,7 +6,6 @@ deflogin on
 #autodetach off
 vbell on
 vbell_msg "   Wuff  ----  Wuff!!  "
-#defbce on
 mousetrack on
 
 # the following two lines give a two-line status, with the current window highlighted
@@ -83,10 +82,6 @@ bindkey "^[OP" focus
 #bindkey "^[[1;5A" focus up
 #bindkey "^[[1;5B" focus down
 
-# 256 colors
-attrcolor b ".I"
-termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
-
 termcap  vt100|xterm LP:G0
 terminfo vt100|xterm LP:G0
 termcap  vt100 dl=5\E[M
@@ -103,6 +98,10 @@ terminfo xterm 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
 #
 # Do not use xterms alternate window buffer. 
 # This one would not add lines to the scrollback buffer.
-termcap xterm|xterms|xs ti=\E7\E[?47l
-terminfo xterm|xterms|xs ti=\E7\E[?47l
+termcap xterm ti=\E7\E[?47l
+terminfo xterm ti=\E7\E[?47l
+
+# 256 colors
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
 
