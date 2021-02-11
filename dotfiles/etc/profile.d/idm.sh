@@ -17,8 +17,10 @@ alias xterm='xterm -fa "Mono" -fs 13'
 alias screen='screen -T screen-256color'
 
 #set -o vi
-bind "set show-all-if-ambiguous on"
-bind "set menu-complete-display-prefix on"
+if [ x"$SHELL" = x"bash" ]; then
+    bind "set show-all-if-ambiguous on"
+    bind "set menu-complete-display-prefix on"
+    fi
 
 if [ x"$TERM" = x"xterm" ]; then
     export TERM=xterm-256color
