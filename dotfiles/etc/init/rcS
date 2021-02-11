@@ -38,3 +38,5 @@ dbus-daemon --system --fork
 
 pulseaudio --system -D
 
+xdm &
+
