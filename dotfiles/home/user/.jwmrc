@@ -1,9 +1,6 @@
 <?xml version="1.0"?>
 <JWM>
-
-    <!-- The root menu. -->
     <RootMenu onroot="12">
-<!-- <Include>/etc/jwm/debian-menu</Include> -->
         <Program icon="xfce4-appfinder" label="Run">xfce4-appfinder</Program>
         <Program icon="st" label="Terminal">terminal</Program>
         <Program icon="firefox" label="Web">firefox</Program>
@@ -18,58 +15,52 @@
         <Exit label="Exit" confirm="true" icon="quit.png"/>
     </RootMenu>
     
-    <!-- Options for program groups. -->
     <Group>
         <Option>tiled</Option>
         <Option>aerosnap</Option>
     </Group>
 
-    <!-- Tray at the bottom. -->
-    <Tray x="0" y="-1" height="32" autohide="off">
-
+    <Tray x="0" y="1050" height="32" autohide="off">
         <TrayButton icon="apps.png">root:1</TrayButton>
 <!--
         <Pager labeled="true"/>
 -->
-        <TaskList maxwidth="256"/>
-
+        <TaskList maxwidth="216"/>
         <Dock/>
-        <Clock format="%I:%M %p on %B %d, %Y"><Button mask="123">exec:program_of_the_day</Button></Clock>
-
+        <Clock format="%I:%M %p on %A %B %d, %Y"><Button mask="123">exec:program_of_the_day</Button></Clock>
     </Tray>
 
-    <!-- Visual Styles -->
     <WindowStyle>
-        <Font>Sans-9:bold</Font>
-        <Width>4</Width>
-        <Height>21</Height>
-        <Corner>3</Corner>
+        <Font>Noto-12</Font>
+        <Width>3</Width>
+        <Height>24</Height>
+        <Corner>8</Corner>
         <Foreground>#FFFFFF</Foreground>
-        <Background>#555555</Background>
+        <Background>#5a3040</Background>
         <Outline>#000000</Outline>
         <Opacity>0.5</Opacity>
         <Active>
             <Foreground>#FFFFFF</Foreground>
-            <Background>#773355</Background>
+            <Background>#803858</Background>
             <Outline>#000000</Outline>
             <Opacity>1.0</Opacity>
         </Active>
     </WindowStyle>
     <TrayStyle group="true" list="all">
-        <Font>Sans-9</Font>
-        <Background>#333333</Background>
+        <Font>Noto-12</Font>
+        <Background>#431323</Background>
         <Foreground>#FFFFFF</Foreground>
         <Outline>#000000</Outline>
         <Opacity>0.75</Opacity>
     </TrayStyle>
     <TaskListStyle>
-      <Font>Sans-9</Font>
+      <Font>Noto-12</Font>
       <Active>
         <Foreground>#FFFFFF</Foreground>
-        <Background>#555555</Background>
+        <Background>#803858</Background>
       </Active>
       <Foreground>#FFFFFF</Foreground>
-      <Background>#333333</Background>
+      <Background>#5a3040</Background>
     </TaskListStyle>
     <PagerStyle>
         <Outline>#000000</Outline>
@@ -82,10 +73,11 @@
         </Active>
     </PagerStyle>
     <MenuStyle>
-        <Font>Sans-9</Font>
+        <Font>Noto-12</Font>
+        <Width>3</Width>
         <Foreground>#FFFFFF</Foreground>
-        <Background>#333333</Background>
-        <Outline>#000000</Outline>
+        <Background>#432333</Background>
+        <Outline>#773355</Outline>
         <Active>
             <Foreground>#FFFFFF</Foreground>
             <Background>#773355</Background>
@@ -93,67 +85,162 @@
         <Opacity>0.85</Opacity>
     </MenuStyle>
     <PopupStyle>
-        <Font>Sans-9</Font>
-        <Foreground>#000000</Foreground>
-        <Background>#999999</Background>
+        <Font>Noto-12</Font>
+        <Foreground>#a0a0a0</Foreground>
+        <Background>#303030</Background>
     </PopupStyle>
 
-    <!-- Path where icons can be found.
-         IconPath can be listed multiple times to allow searching
-         for icons in multiple paths.
-      -->
+    <IconPath>/usr/share/jwm</IconPath>
+    <IconPath>/usr/share/pixmaps</IconPath>
     <IconPath>/usr/local/share/pixmaps</IconPath>
-    <IconPath>/usr/share/icons/Papirus/64x64/actions</IconPath>
+    <IconPath>/usr/share/icons</IconPath>
+    <IconPath>/usr/local/share/icons</IconPath>
+
+    <IconPath>/usr/share/icons/Papirus-Dark/64x64/apps</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/64x64/categories</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/64x64/devices</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/64x64/mimetypes</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/64x64/places</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/32x32/actions</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/32x32/apps</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/32x32/categories</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/32x32/devices</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/32x32/emblems</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/32x32/emotes</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/32x32/mimetypes</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/32x32/places</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/32x32/status</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/128x128/apps</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/128x128/devices</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/128x128/mimetypes</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/128x128/places</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/16x16/actions</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/16x16/apps</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/16x16/categories</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/16x16/devices</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/16x16/emblems</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/16x16/emotes</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/16x16/mimetypes</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/16x16/panel</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/16x16/places</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/16x16/status</IconPath>
+    <IconPath>/usr/share/icons/Papirus-Dark/8x8/emblems</IconPath>
     <IconPath>/usr/share/icons/Papirus/64x64/apps</IconPath>
     <IconPath>/usr/share/icons/Papirus/64x64/categories</IconPath>
     <IconPath>/usr/share/icons/Papirus/64x64/devices</IconPath>
-    <IconPath>/usr/share/icons/Papirus/64x64/emblems</IconPath>
     <IconPath>/usr/share/icons/Papirus/64x64/mimetypes</IconPath>
     <IconPath>/usr/share/icons/Papirus/64x64/places</IconPath>
-    <IconPath>/usr/share/icons/Papirus/64x64/status</IconPath>
     <IconPath>/usr/share/icons/Papirus/32x32/actions</IconPath>
-    <IconPath>/usr/share/icons/Papirus/32x32/animations</IconPath>
     <IconPath>/usr/share/icons/Papirus/32x32/apps</IconPath>
     <IconPath>/usr/share/icons/Papirus/32x32/categories</IconPath>
     <IconPath>/usr/share/icons/Papirus/32x32/devices</IconPath>
     <IconPath>/usr/share/icons/Papirus/32x32/emblems</IconPath>
+    <IconPath>/usr/share/icons/Papirus/32x32/emotes</IconPath>
     <IconPath>/usr/share/icons/Papirus/32x32/mimetypes</IconPath>
     <IconPath>/usr/share/icons/Papirus/32x32/places</IconPath>
     <IconPath>/usr/share/icons/Papirus/32x32/status</IconPath>
-    <IconPath>/usr/share/icons/Papirus/scalable/actions</IconPath>
-    <IconPath>/usr/share/icons/Papirus/scalable/apps</IconPath>
-    <IconPath>/usr/share/icons/Papirus/scalable/categories</IconPath>
-    <IconPath>/usr/share/icons/Papirus/scalable/devices</IconPath>
-    <IconPath>/usr/share/icons/Papirus/scalable/emblems</IconPath>
-    <IconPath>/usr/share/icons/Papirus/scalable/mimetypes</IconPath>
-    <IconPath>/usr/share/icons/Papirus/scalable/places</IconPath>
-    <IconPath>/usr/share/icons/Papirus/scalable/status</IconPath>
-    <IconPath>/usr/share/icons/hicolor/256x256/apps</IconPath>
-    <IconPath>/usr/share/icons/hicolor/256x256/mimetypes</IconPath>
+    <IconPath>/usr/share/icons/Papirus/128x128/apps</IconPath>
+    <IconPath>/usr/share/icons/Papirus/128x128/devices</IconPath>
+    <IconPath>/usr/share/icons/Papirus/128x128/mimetypes</IconPath>
+    <IconPath>/usr/share/icons/Papirus/128x128/places</IconPath>
+    <IconPath>/usr/share/icons/Papirus/16x16/actions</IconPath>
+    <IconPath>/usr/share/icons/Papirus/16x16/apps</IconPath>
+    <IconPath>/usr/share/icons/Papirus/16x16/categories</IconPath>
+    <IconPath>/usr/share/icons/Papirus/16x16/devices</IconPath>
+    <IconPath>/usr/share/icons/Papirus/16x16/emblems</IconPath>
+    <IconPath>/usr/share/icons/Papirus/16x16/emotes</IconPath>
+    <IconPath>/usr/share/icons/Papirus/16x16/mimetypes</IconPath>
+    <IconPath>/usr/share/icons/Papirus/16x16/panel</IconPath>
+    <IconPath>/usr/share/icons/Papirus/16x16/places</IconPath>
+    <IconPath>/usr/share/icons/Papirus/16x16/status</IconPath>
+    <IconPath>/usr/share/icons/Papirus/8x8/emblems</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/64x64/actions</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/64x64/apps</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/64x64/categories</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/64x64/devices</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/64x64/emblems</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/64x64/emotes</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/64x64/legacy</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/64x64/mimetypes</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/64x64/places</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/64x64/status</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/64x64/ui</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/32x32/actions</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/32x32/apps</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/32x32/categories</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/32x32/devices</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/32x32/emblems</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/32x32/emotes</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/32x32/legacy</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/32x32/mimetypes</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/32x32/places</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/32x32/status</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/32x32/ui</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/16x16/actions</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/16x16/apps</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/16x16/categories</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/16x16/devices</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/16x16/emblems</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/16x16/emotes</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/16x16/legacy</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/16x16/mimetypes</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/16x16/places</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/16x16/status</IconPath>
+    <IconPath>/usr/share/icons/Adwaita/16x16/ui</IconPath>
+    <IconPath>/usr/share/icons/hicolor/64x64/actions</IconPath>
+    <IconPath>/usr/share/icons/hicolor/64x64/animations</IconPath>
+    <IconPath>/usr/share/icons/hicolor/64x64/apps</IconPath>
+    <IconPath>/usr/share/icons/hicolor/64x64/categories</IconPath>
+    <IconPath>/usr/share/icons/hicolor/64x64/devices</IconPath>
+    <IconPath>/usr/share/icons/hicolor/64x64/emblems</IconPath>
+    <IconPath>/usr/share/icons/hicolor/64x64/emotes</IconPath>
+    <IconPath>/usr/share/icons/hicolor/64x64/filesystems</IconPath>
+    <IconPath>/usr/share/icons/hicolor/64x64/intl</IconPath>
+    <IconPath>/usr/share/icons/hicolor/64x64/mimetypes</IconPath>
+    <IconPath>/usr/share/icons/hicolor/64x64/places</IconPath>
+    <IconPath>/usr/share/icons/hicolor/64x64/status</IconPath>
+    <IconPath>/usr/share/icons/hicolor/64x64/stock</IconPath>
     <IconPath>/usr/share/icons/hicolor/32x32/actions</IconPath>
-
+    <IconPath>/usr/share/icons/hicolor/32x32/animations</IconPath>
     <IconPath>/usr/share/icons/hicolor/32x32/apps</IconPath>
+    <IconPath>/usr/share/icons/hicolor/32x32/audacity.png</IconPath>
     <IconPath>/usr/share/icons/hicolor/32x32/categories</IconPath>
     <IconPath>/usr/share/icons/hicolor/32x32/devices</IconPath>
     <IconPath>/usr/share/icons/hicolor/32x32/emblems</IconPath>
+    <IconPath>/usr/share/icons/hicolor/32x32/emotes</IconPath>
+    <IconPath>/usr/share/icons/hicolor/32x32/filesystems</IconPath>
+    <IconPath>/usr/share/icons/hicolor/32x32/intl</IconPath>
     <IconPath>/usr/share/icons/hicolor/32x32/mimetypes</IconPath>
+    <IconPath>/usr/share/icons/hicolor/32x32/places</IconPath>
     <IconPath>/usr/share/icons/hicolor/32x32/status</IconPath>
-    <IconPath>/usr/share/icons/hicolor/512x512/apps</IconPath>
-    <IconPath>/usr/share/icons/hicolor/512x512/mimetypes</IconPath>
-    <IconPath>/usr/share/icons/hicolor/scalable/actions</IconPath>
-    <IconPath>/usr/share/icons/hicolor/scalable/apps</IconPath>
-    <IconPath>/usr/share/icons/hicolor/scalable/categories</IconPath>
-    <IconPath>/usr/share/icons/hicolor/scalable/devices</IconPath>
-    <IconPath>/usr/share/icons/hicolor/scalable/emblems</IconPath>
-    <IconPath>/usr/share/icons/hicolor/scalable/mimetypes</IconPath>
-    <IconPath>/usr/share/icons/hicolor/scalable/places</IconPath>
-    <IconPath>/usr/share/icons/hicolor/scalable/status</IconPath>
-    <IconPath>/usr/share/icons</IconPath>
-    <IconPath>/usr/share/pixmaps</IconPath>
-    <IconPath>
-        /usr/local/share/jwm
-    </IconPath>
-
+    <IconPath>/usr/share/icons/hicolor/32x32/stock</IconPath>
+    <IconPath>/usr/share/icons/hicolor/128x128/actions</IconPath>
+    <IconPath>/usr/share/icons/hicolor/128x128/animations</IconPath>
+    <IconPath>/usr/share/icons/hicolor/128x128/apps</IconPath>
+    <IconPath>/usr/share/icons/hicolor/128x128/categories</IconPath>
+    <IconPath>/usr/share/icons/hicolor/128x128/devices</IconPath>
+    <IconPath>/usr/share/icons/hicolor/128x128/emblems</IconPath>
+    <IconPath>/usr/share/icons/hicolor/128x128/emotes</IconPath>
+    <IconPath>/usr/share/icons/hicolor/128x128/filesystems</IconPath>
+    <IconPath>/usr/share/icons/hicolor/128x128/intl</IconPath>
+    <IconPath>/usr/share/icons/hicolor/128x128/mimetypes</IconPath>
+    <IconPath>/usr/share/icons/hicolor/128x128/places</IconPath>
+    <IconPath>/usr/share/icons/hicolor/128x128/status</IconPath>
+    <IconPath>/usr/share/icons/hicolor/128x128/stock</IconPath>
+    <IconPath>/usr/share/icons/hicolor/16x16/actions</IconPath>
+    <IconPath>/usr/share/icons/hicolor/16x16/animations</IconPath>
+    <IconPath>/usr/share/icons/hicolor/16x16/apps</IconPath>
+    <IconPath>/usr/share/icons/hicolor/16x16/audacity.png</IconPath>
+    <IconPath>/usr/share/icons/hicolor/16x16/categories</IconPath>
+    <IconPath>/usr/share/icons/hicolor/16x16/devices</IconPath>
+    <IconPath>/usr/share/icons/hicolor/16x16/emblems</IconPath>
+    <IconPath>/usr/share/icons/hicolor/16x16/emotes</IconPath>
+    <IconPath>/usr/share/icons/hicolor/16x16/filesystems</IconPath>
+    <IconPath>/usr/share/icons/hicolor/16x16/intl</IconPath>
+    <IconPath>/usr/share/icons/hicolor/16x16/mimetypes</IconPath>
+    <IconPath>/usr/share/icons/hicolor/16x16/places</IconPath>
+    <IconPath>/usr/share/icons/hicolor/16x16/status</IconPath>
+    <IconPath>/usr/share/icons/hicolor/16x16/stock</IconPath>
     <!-- Virtual Desktops -->
     <!-- Desktop tags can be contained within Desktops for desktop names. -->
 
