@@ -1,15 +1,14 @@
 <?xml version="1.0"?>
 <JWM>
-    <RootMenu onroot="12">
+    <RootMenu onroot="2">
         <Program icon="xfce4-appfinder" label="Run">xfce4-appfinder</Program>
         <Program icon="st" label="Terminal">terminal</Program>
         <Program icon="firefox" label="Web">firefox</Program>
         <Program icon="spacefm" label="Files">spacefm</Program>
         <Program icon="pavucontrol" label="Volume">pavucontrol</Program>
-        <Separator/>
-        <Program icon="lock.png" label="Lock">
-            slock
-        </Program>
+    </RootMenu>
+    <RootMenu onroot="3">
+        <Program icon="lock.png" label="Lock">slock</Program>
         <Separator/>
         <Restart label="Restart" icon="restart.png"/>
         <Exit label="Exit" confirm="true" icon="quit.png"/>
@@ -21,7 +20,8 @@
     </Group>
 
     <Tray x="0" y="1050" height="32" autohide="off">
-        <TrayButton icon="apps.png">root:1</TrayButton>
+        <TrayButton icon="apps.png">root:2</TrayButton>
+        <TrayButton icon="gnome-logout">root:3</TrayButton>
 <!--
         <Pager labeled="true"/>
 -->
@@ -288,7 +288,8 @@
     <Key mask="4" key="f">fullscreen</Key>
     <Key mask="4" key="z">move</Key>
     <Key mask="4" key="x">resize</Key>
-    <Key mask="4" key="a">root:1</Key>
+    <Key mask="4" key="a">root:2</Key>
+    <Key mask="4" key="s">root:3</Key>
 
     <Key mask="4" key="r">exec:xfce4-appfinder</Key>
     <Key mask="4" key="c">exec:qalculate</Key>
