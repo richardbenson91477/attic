@@ -38,7 +38,7 @@
         <Foreground>#FFFFFF</Foreground>
         <Background>#5a3040</Background>
         <Outline>#000000</Outline>
-        <Opacity>0.5</Opacity>
+        <Opacity>0.92</Opacity>
         <Active>
             <Foreground>#FFFFFF</Foreground>
             <Background>#803858</Background>
