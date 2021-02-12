@@ -164,5 +164,6 @@ endif
 augroup apl_ft
     au!
     autocmd BufNewFile,BufRead *.apl set filetype=julia
+    autocmd BufNewFile,BufRead *.nickle,*.5c set filetype=cpp
 augroup END
 
