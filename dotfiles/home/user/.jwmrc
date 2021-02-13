@@ -4,7 +4,7 @@
         <Program icon="xfce4-appfinder" label="Run">xfce4-appfinder</Program>
         <Program icon="st" label="Terminal">terminal</Program>
         <Program icon="firefox" label="Web">firefox</Program>
-        <Program icon="spacefm" label="Files">spacefm</Program>
+        <Program icon="xfe" label="Files">xfe</Program>
         <Program icon="pavucontrol" label="Volume">pavucontrol</Program>
     </RootMenu>
     <RootMenu onroot="3">
@@ -38,12 +38,12 @@
         <Foreground>#FFFFFF</Foreground>
         <Background>#5a3040</Background>
         <Outline>#000000</Outline>
-        <Opacity>0.92</Opacity>
+        <Opacity></Opacity>
         <Active>
             <Foreground>#FFFFFF</Foreground>
             <Background>#803858</Background>
             <Outline>#000000</Outline>
-            <Opacity>1.0</Opacity>
+            <Opacity></Opacity>
         </Active>
     </WindowStyle>
     <TrayStyle group="true" list="all">
@@ -295,7 +295,7 @@
     <Key mask="4" key="c">exec:qalculate</Key>
     <Key mask="4" key="t">exec:terminal</Key>
     <Key mask="4" key="w">exec:firefox</Key>
-    <Key mask="4" key="e">exec:spacefm</Key>
+    <Key mask="4" key="e">exec:xfe</Key>
     <Key mask="4" key="l">exec:slock</Key>
     <Key mask="4" key="p">exec:gnome-screenshot</Key>
     <Key mask="4" key="i">exec:xrandr_brightness_up</Key>
