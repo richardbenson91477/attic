@@ -8,8 +8,9 @@
         <Program icon="pavucontrol" label="Volume">pavucontrol</Program>
     </RootMenu>
     <RootMenu onroot="3">
-        <Program icon="lock.png" label="Lock">slock</Program>
+        <Program icon="xkill" label="Kill">xkill</Program>
         <Separator/>
+        <Program icon="lock.png" label="Lock">slock</Program>
         <Restart label="Restart" icon="restart.png"/>
         <Exit label="Exit" confirm="true" icon="quit.png"/>
     </RootMenu>
@@ -27,7 +28,7 @@
 -->
         <TaskList maxwidth="216"/>
         <Dock/>
-        <Clock format="%I:%M %p on %A %B %d, %Y"><Button mask="123">exec:program_of_the_day</Button></Clock>
+        <Clock format="%I:%M %p on %A %B %d, %Y"><Button mask="123">exec:gsimplecal</Button></Clock>
     </Tray>
 
     <WindowStyle>
