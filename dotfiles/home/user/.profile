@@ -3,8 +3,8 @@ case "$TERM" in
     "linux"|"console")
         setfont
         ;;
-    "xterm-256color"|"screen-256color"|"st-256color")
-        ~/bin/theme.sh idm-3
+    "xterm-256color"|"screen-256color"|"st-256color")#|"xterm-kitty")
+        ~/bin/theme.sh $(cat ~/.config/terminal-theme)
         ;;
     *)
         ;;

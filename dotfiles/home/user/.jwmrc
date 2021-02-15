@@ -2,9 +2,9 @@
 <JWM>
     <RootMenu onroot="2">
         <Program icon="xfce4-appfinder" label="Run">xfce4-appfinder</Program>
-        <Program icon="st" label="Terminal">terminal</Program>
+        <Program icon="kitty" label="Terminal">kitty</Program>
         <Program icon="firefox" label="Web">firefox</Program>
-        <Program icon="thunar" label="Files">thunar</Program>
+        <Program icon="folder" label="Files">thunar</Program>
         <Program icon="pavucontrol" label="Volume">pavucontrol</Program>
     </RootMenu>
     <RootMenu onroot="3">
@@ -293,14 +293,15 @@
 
     <Key mask="4" key="r">exec:xfce4-appfinder</Key>
     <Key mask="4" key="c">exec:qalculate</Key>
-    <Key mask="4" key="t">exec:terminal</Key>
+    <Key mask="4" key="t">exec:kitty</Key>
     <Key mask="4" key="w">exec:firefox</Key>
     <Key mask="4" key="e">exec:thunar</Key>
     <Key mask="4" key="l">exec:slock</Key>
-    <Key mask="4" key="p">exec:gnome-screenshot</Key>
+    <Key mask="4" key="p">exec:xfce4-screenshooter -f</Key>
     <Key mask="4" key="i">exec:xrandr_brightness_up</Key>
     <Key mask="4" key="u">exec:xrandr_brightness_down</Key>
     <Key mask="4" key="o">exec:xrandr_brightness 1.0</Key>
+    <Key mask="4" key="y">exec:catfish</Key>
     <Key mask="4" key="Delete">exec:lxtask</Key>
 
 </JWM>
