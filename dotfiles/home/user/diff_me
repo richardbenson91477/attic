@@ -1,1 +1,6 @@
-for f in .*; do if [ -f "$f" ]; then echo "*** $f ***"; diff "$f" /home/rich/"$f"; fi; done |less
+#!/bin/sh
+for f in $(find . -type f -not -name "diff_me"); do
+    echo "*** $f ***"
+    diff "$f" /home/rich/"$f"
+    done |\
+  less
