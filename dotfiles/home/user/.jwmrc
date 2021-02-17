@@ -37,7 +37,7 @@
         <Dock/>
         <Clock format="%I:%M %p on %A %B %d, %Y">
             <Button mask="1">exec:gsimplecal</Button>
-            <Button mask="3">exec:gsimplecal</Button>
+            <Button mask="3">exec:program_of_the_day</Button>
             <Button mask="2">exec:amixer_mute</Button>
             <Button mask="4">exec:amixer_up</Button>
             <Button mask="5">exec:amixer_down</Button>
