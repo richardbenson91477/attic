@@ -1,0 +1,12 @@
+#!/bin/sh
+
+M=$(amixer get Master | grep "Front Left:" | field 6)
+
+if [ "$M" = '[off]' ]; then
+    amixer set Master on > /dev/null
+    notify-send -t 750 "unmuted" &
+else
+    amixer set Master off > /dev/null
+    notify-send -t 750 "muted" &
+fi
+

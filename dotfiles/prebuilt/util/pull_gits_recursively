@@ -1,0 +1,13 @@
+#!/bin/sh
+OPWD="$PWD"
+
+for f in $(find . -name .git -type d); do
+    # problem, dirname?
+    GDIR="$OPWD"/"$f"/..
+    echo "$GDIR"
+    cd "$GDIR"
+    git pull
+    done
+
+cd "$OPWD"
+

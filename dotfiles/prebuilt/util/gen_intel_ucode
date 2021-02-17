@@ -1,0 +1,6 @@
+#!/bin/sh
+UN="/boot/intel-ucode.img"
+rm -rf "$UN"
+#iucode_tool -S --write-earlyfw="$UN" /lib/firmware/intel-ucode/*
+iucode_tool --write-earlyfw="$UN" /lib/firmware/intel-ucode/*
+

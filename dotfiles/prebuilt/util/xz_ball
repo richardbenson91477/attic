@@ -1,0 +1,5 @@
+#!/bin/sh
+BN=$(strip_trailing_slash "$1")
+OUTF=$(basename "$BN".tar.xz)
+tar c "$BN" | xz -T0 -6 --lzma2=dict=32M > "$OUTF"
+

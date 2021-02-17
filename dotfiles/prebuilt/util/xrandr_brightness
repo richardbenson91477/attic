@@ -1,0 +1,2 @@
+#!/bin/sh
+xrandr --output $(xrandr | grep " connected" | field 1) --brightness "$@" &

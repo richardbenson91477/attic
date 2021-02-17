@@ -1,0 +1,2 @@
+#!/bin/sh
+du --max-depth=0 "$@"* | sort -n

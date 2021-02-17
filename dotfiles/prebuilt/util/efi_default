@@ -1,0 +1,3 @@
+#!/bin/sh
+efibootmgr -c -l "\EFI\Boot\bootx64.efi"
+

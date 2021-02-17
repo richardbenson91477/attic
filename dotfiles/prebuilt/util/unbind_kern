@@ -1,0 +1,5 @@
+#!/bin/sh
+for file in run tmp sys proc dev/pts dev; do
+    umount $file
+done
+

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+#SPEED=0.01
+SPEED=0.05
+
+B1=$(xrandr --verbose |grep Bright|field 2)
+B2=$(python3 -c "print($B1 + $SPEED) if (($B1 + $SPEED) < 1.0) else print(1.0)")
+
+xrandr --output $(xrandr | grep " connected" | field 1) --brightness "$B2" &
+

@@ -1,0 +1,12 @@
+#!/bin/sh
+qemu-system-x86_64 \
+    -enable-kvm \
+    -cpu host \
+    -smp $CPU_N \
+    -vga std \
+    -net nic \
+    -net user \
+    -device intel-hda -device hda-duplex \
+    -m 2048M \
+    $@
+

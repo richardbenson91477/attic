@@ -1,0 +1,12 @@
+#!/bin/sh
+
+echo "run \"pppd noauth\" on client"
+
+if [ -n "$1" ]; then
+    TTY="$1"
+else
+    TTY="/dev/ttyUSB0"
+fi
+
+pppd noauth proxyarp "$TTY" 115200 10.0.0.1:10.0.0.2 passive local maxfail 0 nocrtscts xonxoff
+

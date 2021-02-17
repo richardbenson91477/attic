@@ -1,0 +1,29 @@
+#!/bin/sh
+if [ -z "$2" ]; then
+    echo "Usage: $0 [binname(without path)] [categories] {comment}"
+    exit
+    fi
+
+N="$1"
+F="/usr/local/share/applications/$N.desktop"
+CA="$2"
+CO="$3"
+
+if [ -f "$F" ]; then
+    echo "$F already exists; bailing out."
+    exit
+    fi
+
+echo "[Desktop Entry]" > "$F"
+echo "Type=Application" >> "$F"
+echo "Name=$N" >> "$F"
+echo "Comment=$CO" >> "$F"
+echo "Exec=$N" >> "$F"
+echo "Icon=$N" >> "$F"
+echo "Categories=$CA" >> "$F"
+
+if [ ! -f "$F" ]; then
+    echo "Failed to create $F"
+    exit
+    fi
+

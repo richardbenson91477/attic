@@ -7,6 +7,7 @@
         <Program icon="folder" label="Files">thunar</Program>
         <Program icon="pavucontrol" label="Volume">pavucontrol</Program>
     </RootMenu>
+
     <RootMenu onroot="3">
         <Program icon="xkill" label="Kill">xkill</Program>
         <Separator/>
@@ -21,14 +22,26 @@
     </Group>
 
     <Tray x="0" y="1050" height="32" autohide="off">
-        <TrayButton icon="apps.png">root:2</TrayButton>
-        <TrayButton icon="gnome-logout">root:3</TrayButton>
+        <TrayButton icon="apps.png">root:2
+            <Button mask="3">exec:xfce4-appfinder</Button>
+            <Button mask="2">exec:xrandr_brightness 1.0</Button>
+            <Button mask="4">exec:xrandr_brightness_up</Button>
+            <Button mask="5">exec:xrandr_brightness_down</Button>
+        </TrayButton>
+        <TrayButton icon="gnome-logout">root:3
+        </TrayButton>
 <!--
         <Pager labeled="true"/>
 -->
         <TaskList maxwidth="216"/>
         <Dock/>
-        <Clock format="%I:%M %p on %A %B %d, %Y"><Button mask="123">exec:gsimplecal</Button></Clock>
+        <Clock format="%I:%M %p on %A %B %d, %Y">
+            <Button mask="1">exec:gsimplecal</Button>
+            <Button mask="3">exec:gsimplecal</Button>
+            <Button mask="2">exec:amixer_mute</Button>
+            <Button mask="4">exec:amixer_up</Button>
+            <Button mask="5">exec:amixer_down</Button>
+        </Clock>
     </Tray>
 
     <WindowStyle>

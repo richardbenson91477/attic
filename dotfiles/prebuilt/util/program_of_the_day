@@ -1,0 +1,5 @@
+#!/bin/sh
+if ! pgrep xboard; then
+    exec xboard -depth 2 &
+    fi
+
