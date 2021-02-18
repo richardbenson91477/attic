@@ -15,7 +15,7 @@
         <Restart label="Restart" icon="restart.png"/>
         <Exit label="Exit" confirm="true" icon="quit.png"/>
     </RootMenu>
-    
+
     <Group>
         <Option>tiled</Option>
         <Option>aerosnap</Option>
@@ -30,11 +30,17 @@
         </TrayButton>
         <TrayButton icon="gnome-logout">root:3
         </TrayButton>
+
+        <TrayButton icon="kitty">exec:kitty</TrayButton>
+        <TrayButton icon="folder">exec:thunar</TrayButton>
+        <TrayButton icon="firefox">exec:firefox</TrayButton>
 <!--
         <Pager labeled="true"/>
 -->
         <TaskList maxwidth="216"/>
+
         <Dock/>
+
         <Clock format="%I:%M %p on %A %B %d, %Y">
             <Button mask="1">exec:gsimplecal</Button>
             <Button mask="3">exec:program_of_the_day</Button>
