@@ -21,7 +21,7 @@ let g:netrw_winsize = 25
 
 filetype indent plugin on
 
-colorscheme idm2-256
+colorscheme idm3-256
 syntax on
 
 let mapleader=","
@@ -166,5 +166,6 @@ augroup apl_ft
     autocmd BufNewFile,BufRead *.apl set filetype=julia
     autocmd BufNewFile,BufRead *.nickle,*.5c set filetype=fortran
     autocmd BufNewFile,BufRead *.yab set filetype=freebasic
+    autocmd BufNewFile,BufRead *.4c set filetype=julia
 augroup END
 
