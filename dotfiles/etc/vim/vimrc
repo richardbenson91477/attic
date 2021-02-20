@@ -135,7 +135,8 @@ nnoremap <leader>gt :set splitright<bar>:vsplit<bar>:set nosplitright<bar>termin
 nnoremap <leader>gT :set splitbelow<bar>:split<bar>:set nosplitbelow<bar>terminal $SHELL -l<cr>
 
 " version control
-nnoremap <leader>vc :w<bar>!git commit -a<cr>
+nnoremap <leader>vc :w<bar>:split<bar>terminal git commit %<cr>
+nnoremap <leader>vC :split<bar>terminal git commit -a<cr>
 nnoremap <leader>vp :!git push<cr>
 nnoremap <leader>vd :!git --no-pager diff --color<cr>
 
