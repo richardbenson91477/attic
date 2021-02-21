@@ -11,8 +11,8 @@ alias less='less -i -RX'
 alias dmesg='dmesg --color=always'
 alias grep='grep --color=auto'
 alias tree='tree -C'
-alias cdr='cd $(realpath "$PWD")'
 alias open='gio open'
+alias cdr='cd $(realpath "$PWD")'
 
 #set -o vi
 if [ x"$SHELL" = x"bash" ]; then
@@ -24,7 +24,5 @@ if [ x"$TERM" = x"xterm" ]; then
     export TERM=xterm-256color
     fi
 
-if [ x"$TERM" = x"xterm-256color" ]; then
-    stty -ixon
-    fi
+stty -ixon
 

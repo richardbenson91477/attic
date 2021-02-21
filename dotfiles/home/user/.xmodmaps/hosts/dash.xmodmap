@@ -9,7 +9,7 @@ keycode 66 = Control_L
 ! note this says _L on purpose, for some reason cinnamon doesn't like _R here
 keycode 105 = Hyper_L
 ! actually Shift_R
-keycode 62 = Escape
+! keycode 62 = Escape
 !actually Super_R
 keycode 108 = Mode_switch
 add control = Control_L
