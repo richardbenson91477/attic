@@ -14,6 +14,7 @@ keycode 105 = Hyper_L
 keycode 108 = Mode_switch
 add control = Control_L
 add shift = Shift_L
+add shift = Shift_R
 add mod3 = Hyper_L
 add mod4 = Super_L Super_R
 

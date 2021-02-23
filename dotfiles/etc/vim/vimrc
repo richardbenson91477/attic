@@ -95,6 +95,7 @@ nnoremap <A-h> <C-w>h
 nnoremap <A-l> <C-w>l
 nnoremap <A-j> <C-w>j
 nnoremap <A-k> <C-w>k
+nnoremap <S-tab> <c-w>w
 
 " resizing windows
 nnoremap <leader>rm <c-w><bar>
@@ -133,7 +134,8 @@ nnoremap <leader>gs :w<bar>!guile %<cr>
 nnoremap <leader>gg :w<bar>!go run .<cr>
 nnoremap <leader>gt :set splitright<bar>:vsplit<bar>:set nosplitright<bar>terminal $SHELL -l<cr>
 nnoremap <leader>gT :set splitbelow<bar>:split<bar>:set nosplitbelow<bar>terminal $SHELL -l<cr>
-nnoremap <leader>gm :!markdown % > %.html && open %.html<cr> 
+nnoremap <leader>gm :w<bar>!markdown % > %.html && open %.html &<cr> 
+nnoremap <leader>go :!open % &<cr>
 
 " version control
 nnoremap <leader>vc :w<bar>:split<bar>terminal git commit %<cr>
