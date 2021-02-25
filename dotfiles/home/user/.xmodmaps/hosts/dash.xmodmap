@@ -1,13 +1,13 @@
 clear lock
 clear control
 clear shift
-clear mod3
+!clear mod3
 clear mod4
 ! actually Caps lock
 keycode 66 = Control_L
 ! actually Control_R
-! note this says _L on purpose, for some reason cinnamon doesn't like _R here
-keycode 105 = Hyper_L
+keycode 105 = Escape
+!keycode 105 = Hyper_R
 ! actually Shift_R
 ! keycode 62 = Escape
 !actually Super_R
@@ -15,6 +15,6 @@ keycode 108 = Mode_switch
 add control = Control_L
 add shift = Shift_L
 add shift = Shift_R
-add mod3 = Hyper_L
+!add mod3 = Hyper_L Hyper_R
 add mod4 = Super_L Super_R
 
