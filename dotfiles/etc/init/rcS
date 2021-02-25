@@ -27,9 +27,11 @@ hostname "$HOSTNAME"
 
 mount -a
 
-/usr/local/sbin/udevd --daemon
-
 cat /etc/init/modules.list."$HOSTNAME" | xargs modprobe -a -b
+
+/usr/local/sbin/udevd --daemon
+/local/bin/udevadm trigger
+/local/bin/udevadm settle
 
 ip link set lo up
 /etc/init/wifi_up &
