@@ -311,6 +311,18 @@
     <Key mask="4" key="a">root:2</Key>
     <Key mask="4" key="s">root:3</Key>
 
+    <Key key="XF86AudioPlay">exec:xrandr_brightness 1.0</Key>
+    <Key key="XF86AudioPrev">exec:xrandr_brightness_down</Key>
+    <Key key="XF86AudioNext">exec:xrandr_brightness_up</Key>
+    <Key key="XF86AudioMute">exec:amixer_mute</Key>
+    <Key key="XF86AudioRaiseVolume">exec:amixer_up</Key>
+    <Key key="XF86AudioLowerVolume">exec:amixer_down</Key>
+    <Key key="XF86HomePage">exec:firefox</Key>
+    <Key key="XF86Search">exec:catfish</Key>
+    <Key key="XF86Favorites">exec:thunar</Key>
+    <Key key="XF86PowerOff">exit</Key>
+    <Key key="Print">exec:xfce4-screenshooter</Key>
+
     <Key mask="4" key="r">exec:xfce4-appfinder</Key>
     <Key mask="4" key="c">exec:qalculate</Key>
     <Key mask="4" key="t">exec:kitty</Key>
@@ -318,10 +330,8 @@
     <Key mask="4" key="e">exec:thunar</Key>
     <Key mask="4" key="l">exec:slock</Key>
     <Key mask="4" key="p">exec:xfce4-screenshooter -f</Key>
-    <Key mask="4" key="i">exec:xrandr_brightness_up</Key>
-    <Key mask="4" key="u">exec:xrandr_brightness_down</Key>
-    <Key mask="4" key="o">exec:xrandr_brightness 1.0</Key>
     <Key mask="4" key="y">exec:catfish</Key>
     <Key mask="4" key="Delete">exec:lxtask</Key>
 
 </JWM>
+
