@@ -98,8 +98,8 @@ nnoremap <A-k> <C-w>k
 nnoremap <S-tab> <c-w>w
 
 " resizing windows
-nnoremap <leader>rm <c-w><bar>
-nnoremap <leader>rM <c-w>_
+nnoremap <leader>rm <c-w>_
+nnoremap <leader>rM <c-w><bar>
 nnoremap <leader>re <c-w>=
 nnoremap <leader>rh <c-w><
 nnoremap <leader>rl <c-w>>
