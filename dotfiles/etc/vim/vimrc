@@ -51,7 +51,7 @@ nnoremap <leader>dt :Tagbar<cr>
 nnoremap <leader>fi :file<cr>
 nnoremap <leader>fq :q<cr>
 nnoremap <leader>fs :w<cr>
-nnoremap <leader>fl :edit<space>
+nnoremap <leader>fo :edit<space>
 nnoremap <leader>fn :enew<cr>
 nnoremap <leader>fr :read<space>
 nnoremap <leader>fj :next<cr>
@@ -59,7 +59,7 @@ nnoremap <leader>fk :prev<cr>
 nnoremap <leader>fc :cd %:p:h<cr>
 
 " ctags
-nnoremap <leader>cl :exec ("set tags=".getcwd()."/tags")<cr>
+nnoremap <leader>co :exec ("set tags=".getcwd()."/tags")<cr>
 nnoremap <leader>cr :exec ("! build_these_tags ".expand("<tags>"))<cr>
 nnoremap <leader>cg <C-]>
 nnoremap <leader>cG :vsplit<bar>exec("tag ".expand("<cword>"))<cr>
