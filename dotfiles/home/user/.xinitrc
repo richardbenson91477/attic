@@ -1,5 +1,6 @@
 #!/bin/sh
 #xfwm4 -c off &
+xsettingsd &
 xwallpaper --stretch ~/Backgrounds-dl/default
 xmodmap_load
 ~/bin/firefox_load &
