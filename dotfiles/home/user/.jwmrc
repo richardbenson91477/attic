@@ -302,7 +302,7 @@
     <Key mask="4" key="Tab">nextstacked</Key>
     <Key mask="4" key="q">close</Key>
     <Key mask="4" key="d">showdesktop</Key>
-    <Key mask="4" key="Spc">window</Key>
+    <Key mask="4" key="Escape">window</Key>
     <Key mask="4" key="m">maximize</Key>
     <Key mask="4" key="n">minimize</Key>
     <Key mask="4" key="f">fullscreen</Key>
