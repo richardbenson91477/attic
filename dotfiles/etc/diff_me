@@ -1,0 +1,6 @@
+#!/bin/sh
+for f in $(find . -type f -not -name "diff_me"); do
+    echo "*** $f ***"
+    diff "$f" /etc/"$f"
+    done |\
+  less
