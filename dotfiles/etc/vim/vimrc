@@ -152,9 +152,8 @@ tnoremap <A-k> <C-\><C-N><C-w>k
 
 " per-directory ctags
 if filereadable("./tags")
-    if input("Load ./tags? ") == "y"
-        exec "set tags=".getcwd()."/tags"
-    endif
+    exec "set tags=".getcwd()."/tags"
+    echo "loaded ./tags"
 endif
 
 " per-directory configs
