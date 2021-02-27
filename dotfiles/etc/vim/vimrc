@@ -78,6 +78,7 @@ nnoremap <leader>sd :exec ("grep -r ".input("Search: ")." ".input("Where: "))<cr
 
 " errors (and search results)
 nnoremap <leader>eo :copen<cr>
+nnoremap <leader>ec :cclose<cr>
 nnoremap <leader>ef :cfirst<cr>
 nnoremap <leader>en :cnext<cr>
 nnoremap <leader>ep :cprev<cr>
