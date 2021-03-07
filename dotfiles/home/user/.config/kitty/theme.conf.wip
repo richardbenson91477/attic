@@ -12,11 +12,11 @@ color10 #c0ff8a
 color11 #ffffca
 color12 #b0e0ff
 color13 #c080b0
-color14 #dadaff
+color14 #d0d0d0
 color15 #ffffff
 
 foreground #ffffff
-background #30102a
+background #30183a
 selection_foreground #202020
 selection_background #f0f0f0
 cursor #fd9dfd
