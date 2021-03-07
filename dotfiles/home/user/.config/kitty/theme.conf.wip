@@ -1,0 +1,22 @@
+color0 #0a0a0a
+color1 #ff2a4a
+color2 #e05aa0
+color3 #f0f0a0
+color4 #90b0ff
+color5 #705080
+color6 #da9aff
+color7 #f0f0f0
+color8 #202020
+color9 #ff908a
+color10 #c0ff8a
+color11 #ffffca
+color12 #b0e0ff
+color13 #b080a8
+color14 #dadaff
+color15 #e0e0e0
+
+foreground #ffffff
+background #30102a
+selection_foreground #202020
+selection_background #f0f0f0
+cursor #fd9dfd
