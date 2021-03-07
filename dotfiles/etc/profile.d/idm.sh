@@ -13,6 +13,7 @@ alias grep='grep --color=auto'
 alias tree='tree -C'
 alias open='gio open'
 alias cdr='cd $(realpath "$PWD")'
+alias term='xterm -fa "Monospace-14" -g 100x33 -ls "$@"'
 
 #set -o vi
 if [ x"$SHELL" = x"bash" ]; then
