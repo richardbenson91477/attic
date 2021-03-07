@@ -14,41 +14,41 @@ hardstatus string '%{= kG}[%{G}%H%? %1`%?%{g}][%= %{= kw}%-w%{+b yk} %n*%t%?(%u)
 
 # default windows
 screen -t Shell1    1 bash -l
-screen -t Vim       2 vim
 screen -t Shell2    3 bash -l
-screen -t ISympy    4 isympy
-select 0
+#screen -t Vim       2 vim
+#screen -t ISympy    4 isympy
+#select 0
 #bind c screen 1 # window numbering starts at 1 not 0
 #bind 0 select 10
 #bind s split
 
 # layouts
-layout autosave on
-layout new one
-select 1
-layout new two
-select 1
-split
-resize -v +8
-focus down
-select 4
-focus up
-layout new three
-select 1
-split
-resize -v +7
-focus down
-select 3
-split -v
-resize -h +10
-focus right
-select 4
-focus up
+#layout autosave on
+#layout new one
+#select 1
+#layout new two
+#select 1
+#split
+#resize -v +8
+#focus down
+#select 4
+#focus up
+#layout new three
+#select 1
+#split
+#resize -v +7
+#focus down
+#select 3
+#split -v
+#resize -h +10
+#focus right
+#select 4
+#focus up
 
-layout attach one
-layout attach two
-layout attach three
-layout select two
+#layout attach one
+#layout attach two
+#layout attach three
+#layout select two
 
 # switch windows with F3 (prev) and F4 (next)
 bindkey "^[OR" prev
