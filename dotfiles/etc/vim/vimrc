@@ -48,7 +48,6 @@ nnoremap <leader>P "+P
 
 " display 
 nnoremap <leader>dd :Lexplore<cr>
-nnoremap <leader>dd :Lexplore<cr>
 nnoremap <leader>dt :Tagbar<cr>
 
 " files
