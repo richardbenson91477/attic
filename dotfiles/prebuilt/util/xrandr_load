@@ -1,2 +1,0 @@
-#!/bin/sh
-~/.xrandrs/hosts/$(hostname).xrandr

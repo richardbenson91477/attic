@@ -1,5 +1,0 @@
-#!/bin/sh
-
-cd $(dirname "$1") 
-ctags -R
-

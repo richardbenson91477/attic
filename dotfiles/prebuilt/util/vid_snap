@@ -1,2 +1,0 @@
-#!/bin/sh
-ffmpeg -f video4linux2 -i /dev/video0 out.png

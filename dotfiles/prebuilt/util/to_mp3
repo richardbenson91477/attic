@@ -1,6 +1,0 @@
-#!/bin/sh
-
-ffmpeg -i "$1" "$1.wav" && \
-    lame --preset extreme "$1.wav" && \
-    rm -rf "$1.wav"
-

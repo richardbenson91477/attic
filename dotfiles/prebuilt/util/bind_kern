@@ -1,5 +1,0 @@
-#!/bin/sh
-for file in dev dev/pts proc sys tmp run; do
-    mount -o bind /$file $file
-done
-

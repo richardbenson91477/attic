@@ -1,8 +1,0 @@
-#!/bin/sh
-if [ x"$XDG_CURRENT_DESKTOP" != x"GNOME" ]; then
-    xmodmap ~/.xmodmaps/hosts/$(hostname).xmodmap &&
-        xmodmap ~/.xmodmaps/math.xmodmap &
-    else
-        echo "ignoring request: reason: running in GNOME"
-    fi
-

@@ -1,4 +1,0 @@
-#!/bin/sh
-NS=$(route -n | grep UG | field 2)
-echo "nameserver ""$NS" > /etc/resolv.conf
-

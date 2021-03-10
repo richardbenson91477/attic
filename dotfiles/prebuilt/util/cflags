@@ -1,3 +1,0 @@
-export CFLAGS="-O3 -march=$CARCH -fPIC -fomit-frame-pointer -funroll-loops" 
-export CXXFLAGS="$CFLAGS"
-

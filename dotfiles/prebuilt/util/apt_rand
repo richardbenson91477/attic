@@ -1,2 +1,0 @@
-#!/bin/sh
-dpkg --list|grep ii|grep -v "^ii  lib"| sort -R|head -n 1

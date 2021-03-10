@@ -1,3 +1,0 @@
-#!/bin/sh
-echo /boot/ /home/ /local/ /prebuilt/ /root/ /usr/ /var/ /etc/
-
