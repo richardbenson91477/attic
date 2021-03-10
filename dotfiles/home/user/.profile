@@ -4,10 +4,9 @@ case "$TERM" in
         setfont
         ;;
     *)
-        if ! grep "kitty" <<< "$TERMINFO" >& /dev/null; then
+        if [ x"$TERMINFO" != x"/local/lib/kitty/terminfo" ]; then
             RUN='~/bin/theme.sh $(cat ~/.config/terminal-theme)'
             eval "$RUN"
-            echo eval "$RUN"
         fi
         ;;
 esac
